@@ -7,7 +7,6 @@ import {
   TbBrandTiktok,
   TbBrandTwitter,
   TbBrandWhatsapp,
-  TbBrandYoutube,
   TbMinusVertical,
 } from "react-icons/tb";
 
@@ -53,39 +52,58 @@ const Navbar = () => {
                   <i className="me-3 d-none d-lg-inline-block">
                     <TbMinusVertical size={20} />
                   </i>
-                  <a target="_blank" href="">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.facebook.com/Morifeoluwa"
+                  >
                     <i className="me-3">
                       <TbBrandFacebook size={20} />
                     </i>
                   </a>
-                  <a target="_blank" href="">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.twitter.com/this_ismorife"
+                  >
                     <i className="me-3">
                       <TbBrandTwitter size={20} />
                     </i>
                   </a>
-                  <a target="_blank" href="">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://www.instagram.com/this_ismorife"
+                  >
                     <i className="me-3">
                       <TbBrandInstagram size={20} />
                     </i>
                   </a>
-                  <a target="_blank" href="https://wa.me/+2347063785030">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://wa.me/+2347063785030"
+                  >
                     <i className="me-3">
                       <TbBrandWhatsapp size={20} />
                     </i>
                   </a>
-                  <a target="_blank" href="">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://github.io/this_ismorife"
+                  >
                     <i className="me-3">
                       <TbBrandGithub size={20} />
                     </i>
                   </a>
-                  <a target="_blank" href="">
-                    <i className="me-3">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href="https://tiktok.com/this_ismorife"
+                  >
+                    <i className="">
                       <TbBrandTiktok size={20} />
-                    </i>
-                  </a>
-                  <a target="_blank" href="">
-                    <i>
-                      <TbBrandYoutube size={20} />
                     </i>
                   </a>
                 </span>
