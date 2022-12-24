@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { Footer, Navbar } from "../components/index";
+import { Footer, Navbar, PageLoader } from "../components/index";
 
 import hero from "../assets/hero.png";
 import signature from "../assets/signature.png";
@@ -21,6 +21,13 @@ import {
 } from "react-icons/tb";
 
 const Home = () => {
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const skills = [
     {
       skill: "HTML",
@@ -79,6 +86,7 @@ const Home = () => {
 
   return (
     <>
+      <PageLoader loading={loading} />
       <Navbar />
       <div className="bg-background pt-5 pb-5 pb-md-0 text-white">
         <div className="container">
